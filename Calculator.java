@@ -1,28 +1,28 @@
 package com.company;
 
 public class Calculator {
-    reader reader = new reader();
+
     static String result;
 
     void calculate() {
-        if (reader.operator.equals("+")) {
-            result = Integer.toString(reader.firstarg + reader.secondarg);
+        if (Reader.operator.equals("+")) {
+            result = Integer.toString(Reader.firstarg + Reader.secondarg);
             System.out.println(result);
 
         }
-        if (reader.operator.equals("-")) {
-            result = Integer.toString(reader.firstarg - reader.secondarg);
+        if (Reader.operator.equals("-")) {
+            result = Integer.toString(Reader.firstarg - Reader.secondarg);
             System.out.println(result);
         }
-        if (reader.operator.equals("*")) {
-            result = Integer.toString(reader.firstarg * reader.secondarg);
+        if (Reader.operator.equals("*")) {
+            result = Integer.toString(Reader.firstarg * Reader.secondarg);
             System.out.println(result);
         }
-        if (reader.operator.equals(":")) {
-            if (reader.secondarg == 0) {
+        if (Reader.operator.equals(":")) {
+            if (Reader.secondarg == 0) {
                 throw new ArithmeticException();
             }
-            result = Integer.toString(reader.firstarg / reader.secondarg);
+            result = Integer.toString(Reader.firstarg / Reader.secondarg);
             System.out.println(result);
         }
 
